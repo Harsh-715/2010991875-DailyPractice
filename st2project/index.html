@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+	#b{
+		background-color:orange;
+		text-align:center;
+		height:60%;
+	}
+	.A{
+		text-align:center;
+	}
+	#c{
+	    height:sum;
+		width:sum;
+		border-radius:border-radius;
+	}
+</style>
+
+    <body>
+	 <div id="b">
+	 <h1 class="A">Enter a number to create a Square Shape</h1>
+	 <input type="text" id="number" value="" style="width:40%;height:5%"><br>
+	 <button type="button" onclick="myfnc()">Create Square Shape</button>
+	 
+	 </div>
+	 <div id="c"></div>
+	 <script>
+	 function myfnc(){
+	 	 let a=document.getElementById("number").value;
+
+	     console.log("yes");
+
+	
+		
+			 let d=document.createElement('div');
+			 d.style.backgroundColor="red";
+			 d.style.height="50%";
+             d.style.width="100%";
+			 console.log(d);
+			 let div=document.querySelector('#c');
+			 div.appendChild(d);
+	    
+    }
+	 </script>
+    </body> 
+</html>
